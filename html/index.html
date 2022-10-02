@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font cdn here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Lexend+Deca:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- bootstrap css cdn here  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css link here  -->
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- header section stated here  -->
+       <header>
+            <div class="container-fluid p-0">
+                <div class="header-container">
+                    <div class="header-titll">
+                        <h1>Select Your Favorite Player</h1>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud amet.
+                        </p>
+                    </div>      
+                </div>
+            </div>
+       </header>
+    <!-- header section end here  -->
+
+    <!-- main section started here  -->
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                               <img src="../images/img1.jpg" alt="">
+                               <div class="player-details">
+                                    <h3 id="name-1">Lionel Messi</h3>
+                                    <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                    <button class="btn btn-primary w-100 my-3" id="1">Select</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                                <img src="../images/img2.jpeg" alt="">
+                               <div class="player-details">
+                                    <h3 id="name-2">Neymar Jr</h3>
+                                    <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                    <button class="btn btn-primary w-100 my-3" id="2">Select</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                                <img src="../images/img3.jpeg" alt="">
+                                <div class="player-details">
+                                     <h3 id="name-3">Kylian Mbappe</h3>
+                                     <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                     <button class="btn btn-primary w-100 my-3" id="3">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                                <img src="../images/img4.jpeg.crdownload" alt="">
+                                <div class="player-details">
+                                     <h3 id="name-4">Vítor Machado</h3>
+                                     <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                     <button class="btn btn-primary w-100 my-3" id="4">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                                <img src="../images/img5.jfif" alt="">
+                                <div class="player-details">
+                                     <h3 id="name-5">Sergio Ramos</h3>
+                                     <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                     <button class="btn btn-primary w-100 my-3" id="5">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="player">
+                                <img src="../images/img6.jpg" alt="">
+                                <div class="player-details">
+                                     <h3 id="name-6">Renato Sanches</h3>
+                                     <span>36 Goals </span> <span class="mx-3"> . </span> <span> 120 Assist</span>
+                                     <button class="btn btn-primary w-100 my-3" id="6">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-3 mt-2">
+                    <div class="selected-player">
+                        <h2 class="text-center">Selected-V</h2>
+                        <ol id="player-list" class="mt-5">
+
+                        </ol>
+                    </div>
+                    <div class="budget-calculation mt-5">
+                        <h2>Budget</h2>
+                        <div class="from-group my-4">
+                            <label for="">per Player</label>
+                            <input type="Number" id="player-cost">
+                        </div>
+                        
+                        <button class="btn btn-success w-100 my-3" id="player-calculate">Calculate</button>
+                        <h4 class="text-secondary">Player Expenses <span id="total-player-cost"></span></h4>
+                        <div class="from-group my-4">
+                            <label for="">Manager</label>
+                            <input type="number" id="manager-cost">
+                        </div>
+                        <div class="from-group my-4">
+                            <label for="">Coach</label>
+                            <input type="number" id="coach-cost">
+                        </div>
+                        <button class="btn btn-success w-100 my-3" id="total-calculate">Calculate Total</button>
+                        <div class="total">
+                            <h4>Total </h4>
+                            <h4 id="total-cost" ></h4>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main section end here  -->
+
+
+    <!-- footer section started here  -->
+    <footer>
+
+    </footer>
+    <!-- footer section end here  -->
+
+
+
+
+    <!-- bootstrap js/popper/jQuery link here  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom js link here  -->
+    <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* browser reset and common style started here  */
+ *
+ {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    
+ }
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+ body 
+ {
+    background-color: #18191A;
+ }
+/* browser reset and common style end here  */
+
+/* header style  started here  */
+.header-container
+ {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 10px;
+ }
+ .header-titll h1 
+ {
+    color: white;
+    font-size: 73px;
+    text-align: center;
+    color: coral;
+    font-family: 'Italiana', serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+ }
+ .header-titll p 
+ {
+    color: rgb(195, 226, 255);
+    max-width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 25px;
+ }
+
+/* header style  end here  */
+
+/* main style started here  */
+.player 
+{
+    border: 1px solid rgba(255, 255, 255, 0.309);
+    margin: 10px 0px;
+    background-color: black;
+    border-radius: 2px;
+}
+.player-details h3 
+{
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+.player-details  
+{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.player img 
+{
+    width: 100%;
+    height: 200px;
+}
+.selected-player 
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+#player-list li 
+{
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.budget-calculation 
+{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+.budget-calculation label 
+{
+    font-size: 20px;
+}
+.budget-calculation input 
+{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    height: 35px;
+    width: 150px;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+#total-player-cost 
+{
+   margin-left: 20px;
+   font-size: 20px;
+  color: white;
+}
+.total 
+{
+    display: flex;
+    justify-content: space-between;
+}
+button 
+{
+    background-color: #015196!important;
+    border: 1px solid #015196;
+}
+#total-cost 
+{
+    color: coral;
+}
+/* main style end here  */
